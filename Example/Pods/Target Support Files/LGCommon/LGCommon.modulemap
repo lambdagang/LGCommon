@@ -1,0 +1,6 @@
+framework module LGCommon {
+  umbrella header "LGCommon-umbrella.h"
+
+  export *
+  module * { export * }
+}
