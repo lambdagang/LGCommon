@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LGCommon"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Swift common utilities"
 
 # This description is used to generate tags and improve search results.
@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                       DESC
+                        Swift library with common development utilities
+                        DESC
 
-  s.homepage         = "https://github.com/va1da/LGCommon"
+  s.homepage         = "https://github.com/lambdagang/LGCommon"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Ondřej Valík" => "o.valik@me.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/LGCommon.git", :tag => s.version.to_s }
+  s.author           = { "Ondřej Valík" => "lambda.gang@me.com" }
+  s.source           = { :git => "https://github.com/lambdagang/LGCommon.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'

@@ -9,7 +9,7 @@
 import Foundation
 
 
-func iterateEnum<T: Hashable>(_: T.Type) -> AnyGenerator<T> {
+public func iterateEnum<T: Hashable>(_: T.Type) -> AnyGenerator<T> {
     var i = 0
     return anyGenerator {
         let next = withUnsafePointer(&i) { UnsafePointer<T>($0).memory }
