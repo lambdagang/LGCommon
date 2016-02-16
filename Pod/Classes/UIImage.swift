@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-extension UIImage {
+public extension UIImage {
     
     enum AssetIdentifier: String {
         case AppIcon = "AppIcon"

@@ -4,6 +4,7 @@ import Quick
 import Nimble
 import LGCommon
 
+
 class SegueHandlerTypeSpec: QuickSpec {
     
     class TestViewController: UIViewController, SegueHandlerType {

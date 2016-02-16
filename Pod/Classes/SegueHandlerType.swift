@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-protocol SegueHandlerType {
+public protocol SegueHandlerType {
     
     typealias SegueIdentifier: RawRepresentable
 }
@@ -18,11 +18,11 @@ protocol SegueHandlerType {
 
 extension SegueHandlerType where Self: UIViewController, SegueIdentifier.RawValue == String {
     
-    func performSegueWithIdentifier(segueIdentifier: SegueIdentifier, sender: AnyObject?) {
+    public func performSegueWithIdentifier(segueIdentifier: SegueIdentifier, sender: AnyObject?) {
         performSegueWithIdentifier(segueIdentifier.rawValue, sender: sender)
     }
     
-    func segueIdentifierForSegue(segue: UIStoryboardSegue) -> SegueIdentifier {
+    public func segueIdentifierForSegue(segue: UIStoryboardSegue) -> SegueIdentifier {
         guard let identifier = segue.identifier, segueIdentifier = SegueIdentifier(rawValue: identifier)
         else { fatalError("Invalid segue identifier \(segue.identifier).") }
         
