@@ -3,7 +3,7 @@ use_frameworks!
 
 
 target 'LGCommon_Tests', :exclusive => true do
-  pod "LGCommon", :path => "../"
+  pod 'LGCommon', :path => '../'
 
   pod 'Quick', '~> 0.8.0'
   pod 'Nimble', '3.0.0'
